@@ -46,9 +46,8 @@ Before you begin, ensure you have the following installed and configured:
 | :--- | :--- | :--- | :--- |
 | `instance_type` | EC2 instance size/type | `string` | `"t3.micro"` |
 | `instance_name` | Name tag assigned to EC2 instance | `string` | `"terraform-ec2"` |
-| `ami_id` | Fallback AMI ID | `string` | `"ami-0dee22c13ea7a9a67"` |
 
-*(Note: `main.tf` is configured to dynamically fetch the latest official Ubuntu 24.04 AMI, using `ami_id` as an optional fallback).*
+*(Note: The AMI is resolved automatically and dynamically via official Canonical data sources in `main.tf`, eliminating any hardcoded IDs).*
 
 ---
 
