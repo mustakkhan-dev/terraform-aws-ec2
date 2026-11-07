@@ -1,4 +1,15 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Automated AWS EC2 Deployment with Terraform" width="100%" style="border-radius: 8px;">
+</p>
+
 # 🚀 Automated AWS EC2 Deployment with Terraform
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Terraform-%23623CE4.svg?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License">
+</p>
 
 An Infrastructure-as-Code (IaC) project that automatically provisions an **Ubuntu 24.04 LTS EC2 instance** inside the default VPC on AWS using **Terraform**.
 
@@ -18,6 +29,8 @@ An Infrastructure-as-Code (IaC) project that automatically provisions an **Ubunt
 
 ```text
 terraform-ec2/
+├── assets/
+│   └── banner.png      # Repository header banner
 ├── .gitignore          # Prevents pushing sensitive state files and caches
 ├── provider.tf         # Terraform and AWS provider requirements
 ├── variable.tf         # Configurable input variables
